@@ -153,6 +153,8 @@
           index = i ;
         }
       });
+      /****** Correction du code bouton "Précédent" *******/
+      index = (index - 1) % imagesCollection.length;
       next =
         imagesCollection[index] ||
         imagesCollection[imagesCollection.length - 1];
@@ -192,6 +194,8 @@
           index = i;
         }
       });
+      /******* Correction du code bouton "Suivant" **********/
+      index = (index + 1) % imagesCollection.length;
       next = imagesCollection[index] || imagesCollection[0];
       $(".lightboxImage").attr("src", $(next).attr("src"));
     },
@@ -240,7 +244,8 @@
         return;
       }
       $(".active-tag").removeClass("active active-tag");
-      $(this).addClass("active-tag");
+      /******* Correction pour que le filtre sélectionné soit affiché ********/
+      $(this).addClass("active active-tag");
 
       var tag = $(this).data("images-toggle");
 
