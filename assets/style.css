@@ -91,8 +91,9 @@ body {
 }
 
 #gallery {
-	/*	min-height: 100vh; */
+		min-height: 100vh; 
 }
+
 .title{
 	text-align: center;
 	padding-block: 2em;
@@ -101,9 +102,9 @@ body {
 	justify-content: center;
 }
 
-/*.gallery .nav .nav-item {
+.gallery .nav .nav-item {
 	cursor: pointer;
-}*/
+}
 .nav-pills .nav-link.active, .nav-pills .show > .nav-link {
 	color: #fff;
 	background-color: #BEB45A;
@@ -357,4 +358,5 @@ input[type="submit"] {
 		width: 80%;
 	}
 }
+
 
