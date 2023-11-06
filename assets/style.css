@@ -49,7 +49,11 @@ body {
 	padding-block: 100px;
 	position: relative;
 }
-
+/***** Ajout des dimensions des images du carousel *****/
+/*.d-block {
+	max-width: 100%;
+	height: auto;
+}*/
 .picture.left::before {
 	content: ' ';
 	background-color: #E5975F;
@@ -106,7 +110,7 @@ body {
 	cursor: pointer;
 }
 .nav-pills .nav-link.active, .nav-pills .show > .nav-link {
-	color: #fff;
+	color: #000;
 	background-color: #BEB45A;
 	border-radius:0 ;
 }
@@ -131,6 +135,7 @@ body {
 	object-fit: cover;
 	padding: .5em;
 }
+
 .mg-prev, .mg-next {
 	width: 30px;
 	height: 30px;
